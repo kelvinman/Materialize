@@ -33,7 +33,6 @@
       </ul>
 
       <!--navbar-->
-      
       <nav>
         <div class="class navwrapper container">
           <a href="#" class="brand-logo center">A</a>
