@@ -54,80 +54,111 @@
          
          <div class="container">
           <!-- container-->
-           <!-- the beginning of second card-->
-             <!--
-            <div class="row">
-                <div class="col s12 m8 offset-m2">
-                    <div class="card white">
-                        <div class="card-content black-text">
-                        <span class="card-title red-text text-accent-2">CREATE CONNECTIONS</span>
-                         <div class="row">
-                                <div class="input-field col s6">
-                                  <input id="connection_name" type="text" class="validate">
-                                  <label for="name">Name</label>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                              <div class="input-field col s12">
-                                <select multiple>
-                                  <option value="" disabled selected>Choose your connection</option>
-                                  <option value="1">Option 1</option>
-                                  <option value="2">Option 2</option>
-                                  <option value="3">Option 3</option>
-                                </select>
-                                <label>Connections</label>
-                            </div>
-                            </div>
-                            <div class="row">
-                                    <div class="input-field col s12">                                        
-                                      <button class="right btn waves-effect waves-light red accent-2" type="submit" name="action">CREATE CONNECTION</button>
-                                    </div>
-                                  </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             <!-- end of the FIRST card--> 
              <!-- the beginning of second card-->
-             <!--
+             <br>
               <div class="row">
-                <div class="col s12 m8 offset-m2">
+                <div class="col s12">
                     <div class="card white">
                         <div class="card-content black-text">
-                        <span class="card-title red-text text-accent-2">CONNECTIONS</span>
-                        <i class="material-icons">edit</i>
-                         <table class="highlight">
-                    <thead>
-                      <tr>
-                          <th>Name</th>
-                          <th>Data Source</th>
-                          <th>Last Modified</th>
-                      </tr>
-                    </thead>
+                        <span class="card-title red-text text-accent-2"><i class="material-icons left">filter_drama</i>CONNECTIONS<button class="right btn waves-effect waves-light red accent-2 modal-trigger" href="#modal1" type="submit" name="action"><i class="material-icons left">add</i>CREATE CONNECTION</button></span>
+                        <br>
+                        <table class="highlight bordered editable">
+                           <thead>
+                             <tr>
+                                 <th>Name</th>
+                                 <th>Data Source</th>
+                                 <th>Last Modified</th>
+                             </tr>
+                           </thead>
 
-                    <tbody>
-                      <tr>
-                        <td>First</td>
-                        <td>Facebook Ads</td>
-                        <td>11/08/2017</td>
-                      </tr>
-                      <tr>
-                        <td>Second</td>
-                        <td>Google AdWords</td>
-                        <td>11/06/2017</td>
-                      </tr>
-                      <tr>
-                        <td>Third</td>
-                        <td>DoubleClick</td>
-                        <td>11/21/2017</td>
-                      </tr>
-                    </tbody>
-                    </table>      
+                           <tbody>
+                             <tr>
+                               <td class="editable">First</td>
+                               <td>Facebook Ads</td>
+                               <td>11/08/2017</td>
+                             </tr>
+                             <tr>
+                               <td class="editable">Second</td>
+                               <td>Google AdWords</td>
+                               <td>11/06/2017</td>
+                             </tr>
+                             <tr>
+                               <td class="editable">Third</td>
+                               <td>DoubleClick</td>
+                               <td>11/21/2017</td>
+                             </tr>
+                           </tbody>
+                        </table>  
+                        <br>     
                     </div>
                   </div>
                 </div>
               </div><!-- end of the second card-->
+
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>CREATE CONNECTIONS</h4>
+
+                  <br>
+                  <div class="input-field col s6">
+                  <input id="connection_name" type="text" class="validate">
+                  <label for="name">Name</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Choose your connection</option>
+                    <option value="1">Facebook Ads</option>
+                    <option value="2">Google Adwords</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-light btn red accent-2">CREATE CONNECTION</a>
+                </div>
+                <br>
+              </div>
+
+              <!-- the beginning of second card-->
+              <!--
+               <div class="row">
+                   <div class="col s12 m8 offset-m2">
+                       <div class="card white">
+                           <div class="card-content black-text">
+                           <span class="card-title red-text text-accent-2">CREATE CONNECTIONS</span>
+                            <div class="row">
+                                   <div class="input-field col s6">
+                                     <input id="connection_name" type="text" class="validate">
+                                     <label for="name">Name</label>
+                                   </div>
+                               </div>
+                               
+                               <div class="row">
+                                 <div class="input-field col s12">
+                                   <select multiple>
+                                     <option value="" disabled selected>Choose your connection</option>
+                                     <option value="1">Option 1</option>
+                                     <option value="2">Option 2</option>
+                                     <option value="3">Option 3</option>
+                                   </select>
+                                   <label>Connections</label>
+                               </div>
+                               </div>
+                               <div class="row">
+                                       <div class="input-field col s12">                                        
+                                         <button class="right btn waves-effect waves-light red accent-2" type="submit" name="action">CREATE CONNECTION</button>
+                                       </div>
+                                     </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                <!-- end of the FIRST card--> 
+
+          <!--
           <br>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
@@ -191,6 +222,7 @@
                         </div>
                 </div>
               </div><!-- end of collapse body-->
+
             </li>
           </ul>         
             
