@@ -131,10 +131,9 @@
           <br>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
-              <div class="collapsible-header active"><i class="material-icons">create_new_folder</i>CONNECTIONS</div>
+              <div class="collapsible-header active"><i class="material-icons">filter_drama</i>CONNECTIONS</div>
               <div class="collapsible-body">
-                     <i class="material-icons">edit</i>
-                         <table class="highlight">
+                         <table class="highlight bordered editable">
                                 <thead>
                                   <tr>
                                       <th>Name</th>
@@ -145,17 +144,17 @@
 
                                 <tbody>
                                   <tr>
-                                    <td>First</td>
+                                    <td class="editable">First</td>
                                     <td>Facebook Ads</td>
                                     <td>11/08/2017</td>
                                   </tr>
                                   <tr>
-                                    <td>Second</td>
+                                    <td class="editable">Second</td>
                                     <td>Google AdWords</td>
                                     <td>11/06/2017</td>
                                   </tr>
                                   <tr>
-                                    <td>Third</td>
+                                    <td class="editable">Third</td>
                                     <td>DoubleClick</td>
                                     <td>11/21/2017</td>
                                   </tr>
@@ -164,7 +163,7 @@
             </div>
             </li>
             <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>
+              <div class="collapsible-header"><i class="material-icons">create_new_folder</i>
               CREATE CONNECTIONS 
               </div>
               <div class="collapsible-body">
@@ -177,7 +176,7 @@
 
                 <div class="row">
                   <div class="input-field col s12">
-                    <select multiple>
+                    <select>
                       <option value="" disabled selected>Choose your connection</option>
                       <option value="1">Option 1</option>
                       <option value="2">Option 2</option>
@@ -203,6 +202,7 @@
         
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="../../js/mindmup-editabletable.js"></script>
       <script type="text/javascript" src="../../js/materialize.min.js"></script>
       <script src="../../js/init.js"></script>
 
