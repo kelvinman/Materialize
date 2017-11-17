@@ -10,8 +10,9 @@ $.fn.editableTableWidget = function (options) {
 			},
 			activeOptions = $.extend(buildDefaultOptions(), options),
 			ARROW_LEFT = 37, ARROW_UP = 38, ARROW_RIGHT = 39, ARROW_DOWN = 40, ENTER = 13, ESC = 27, TAB = 9,
+            /*css property of editor need to be specifiyed without transparacy to be able to work well with MaterializeCSS*/
 			element = $(this),
-			editor = activeOptions.editor.css('position', 'absolute').hide().appendTo(element.parent()),
+			editor = activeOptions.editor.css({'position': 'absolute','background': 'white',}).hide().appendTo(element.parent()),
 			active,
 			showEditor = function (select) {
 				active = element.find('td.editable:focus');

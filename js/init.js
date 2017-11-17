@@ -10,6 +10,6 @@
 })(jQuery);
 
 $(document).ready(function(){
-    $("table.editable").editableTableWidget;
-    $('table.editable').editableTableWidget({editor: $('<textarea>')});
+    $("table.editable").editableTableWidget();
+   
   });
