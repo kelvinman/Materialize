@@ -1,59 +1,50 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
-
     <head>
-
       <title>Adigami</title>
-
       <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
+      <link rel="stylesheet" href="../../css/materialize.min.css">
+      <link rel="stylesheet" href="../../css/init.css">
       <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
+      <script src="../../js/materialize.min.js"></script>
       <!-- Import icons-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     </head>
 
     <body>
-      
-      <ul id="dropdown1" class="dropdown-content">
-        <!--<li><a href="#!">User</a></li>-->
-        <li class="active"><a href="#!">Setting</a></li>
+      <!--navbar dropdown-->
+      <ul id="navbar-dropdown" class="dropdown-content">
+        <li><a href="../../Views/Pages/setting.html">Setting</a></li>
         <li class="divider"></li>
         <li><a href="../../index.html">Logout</a></li>
       </ul>
-
-      <ul id="dropdown2" class="dropdown-content">
-        <!--<li><a href="#!">User</a></li>-->
-        <li class="active"><a href="#!">Setting</a></li>
+      <!--side-nav dropdown-->
+      <ul id="side-nav-dropdown" class="dropdown-content">
+        <li><a href="../../Views/Pages/setting.html">Setting</a></li>
         <li class="divider"></li>
         <li><a href="../../index.html">Logout</a></li>
       </ul>
-
       <!--navbar-->
-      
       <nav class="blue-grey">
         <div class="class navwrapper container">
          <img src="../../img/adigami-icon.ico">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="../../Views/Pages/dashboard.html">DASHBOARD</a></li>
-            <li><a href="connections.html">CONNECTIONS</a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">USER<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../../Views/Pages/connections.html">CONNECTIONS</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="navbar-dropdown">USER<i class="material-icons right">arrow_drop_down</i></a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <br>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="connections.html">Connections</a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">User<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../../Views/Pages/dashboard.html">Dashboard</a></li>
+            <li><a href="../../Views/Pages/connections.html">Connections</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="side-nav-dropdown">User<i class="material-icons right">arrow_drop_down</i></a></li>
           </ul>
         </div>
       </nav>
 
-      <div class="valign-wrapper" style="width:100%;height:80%;position: absolute;">
-          <div class="valign" style="width:100%;">
+      <div class="valign-wrapper" style="width: 100%; height: 80%; position: absolute;">
+          <div class="valign" style="width: 100%;">
               <div class="container">
                  <div class="row">
                     <div class="col s12 m6 offset-m3">
@@ -105,7 +96,4 @@
       <script src="../../js/init.js"></script>
 
     </body>
-
-
-
   </html>
