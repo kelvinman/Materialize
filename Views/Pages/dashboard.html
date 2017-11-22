@@ -1,7 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
-
-     <head>
+    <head>
       <title>Adigami</title>
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="../../css/materialize.min.css">
@@ -13,152 +12,136 @@
     </head>
 
     <body class="grey lighten-5">
-      
-      <ul id="dropdown3" class="dropdown-content">
-        <!--<li><a href="#!">User</a></li>-->
+      <!--navbar dropdown-->
+      <ul id="navbar-dropdown" class="dropdown-content">
         <li><a href="../../Views/Pages/setting.html">Setting</a></li>
         <li class="divider"></li>
         <li><a href="../../index.html">Logout</a></li>
       </ul>
-
-      <ul id="dropdown4" class="dropdown-content">
-        <!--<li><a href="#!">User</a></li>-->
+      <!--side-nav dropdown-->
+      <ul id="side-nav-dropdown" class="dropdown-content">
         <li><a href="../../Views/Pages/setting.html">Setting</a></li>
         <li class="divider"></li>
         <li><a href="../../index.html">Logout</a></li>
       </ul>
-
       <!--navbar-->
-      
       <nav class="blue-grey">
         <div class="class navwrapper container">
           <img src="../../img/adigami-icon.ico">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="active"><a href="../../Views/Pages/dashboard.html">DASHBOARD</a></li>
-            <li><a href="connections.html">CONNECTIONS</a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown3">USER<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="#!">DASHBOARD</a></li>
+            <li><a href="../../Views/Pages/connections.html">CONNECTIONS</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="navbar-dropdown">USER<i class="material-icons right">arrow_drop_down</i></a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <br>
-            <li class="active"><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="connections.html">Connections</a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown4">User<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="#!">Dashboard</a></li>
+            <li><a href="../../Views/Pages/connections.html">Connections</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="side-nav-dropdown">User<i class="material-icons right">arrow_drop_down</i></a></li>
           </ul>
         </div>
       </nav>
+
       <div class="container">
-      <div class="row">
-                <div class="col s12">
-                    <div class="card white z-depth-1">
-                        <div class="card-content black-text">
-                        <span class="card-title red-text text-accent-2"><i class="material-icons left">image</i>DASHBOARD</span>
-                        <div class="row"><!-- option selection-->
-                        <div class="input-field col s6">
-                            <select>
-                              <option value="" disabled selected>Choose your Connection</option>
-                              <option value="1">Option 1</option>
-                              <option value="2">Option 2</option>
-                              <option value="3">Option 3</option>
-                            </select>
-                            <label>Dashboard Connection</label>
-                          </div>
-
-                          <div class="input-field col s6">
-                            <select>
-                              <option value="" disabled selected>Choose data range</option>
-                              <option value="1">7 Days</option>
-                              <option value="2">14 Days</option>
-                              <option value="3">30 Days</option>
-                            </select>
-                            <label>Data range</label>
-                          </div>
-                            </div><!-- end of row--> 
-                        </div><!-- end of card contend div-->
-                      </div>
-                    </div>
-          
-              </div><!-- end of the cardrow-->
-          <div class="row">
-            <div class="section">
-               <div class="col s2 ">
-                <div class="card grey lighten-3 z-depth-0">
-                    <div class="card-content red-text text-accent-2 ">
-                     <div class="input-field">
-                        <select>
-                          <option value="1"selected>Clicks</option>
-                          <option value="2">Views</option>
-                          <option value="3">Avg.CPM</option>
-                        </select>
-                      </div>
-                    <p>Increase 20%</p>
-                </div>
-              </div>
-            </div><!-- end of card-->  
-               <div class="col s2 push-s3">
-                <div class="card grey lighten-3 z-depth-0">
-                    <div class="card-content red-text text-accent-2 ">
-                        <div class="input-field">
-                        <select>
-                          <option value="1"selected>Views</option>
-                          <option value="2">Clicks</option>
-                          <option value="3">Avg.CPM</option>
-                        </select>
-                      </div>
-                    <p>Decrease 20%</p>
-                    </div>
+        <br>
+        <div class="row">
+          <div class="col s12">
+            <div class="card white z-depth-1">
+              <div class="card-content black-text">
+              <span class="card-title red-text text-accent-2"><i class="material-icons left">image</i>DASHBOARD</span>
+                <div class="row">
+                  <!-- select connection-->
+                  <div class="input-field col s6">
+                    <select>
+                      <option value="" disabled selected>Choose your Connection</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <label>Dashboard Connection</label>
                   </div>
-            </div><!-- end of card-->
-               <div class="col s2 push-s6 ">
-                <div class="card grey lighten-3 z-depth-0">
-                    <div class="card-content red-text text-accent-2 ">
-                    <div class="input-field">
-                        <select>
-                          <option value="1"selected>Clicks</option>
-                          <option value="2">Views</option>
-                          <option value="3">Avg.CPM</option>
-                        </select>
-                      </div>
-                    <p>Increase 20%</p>
+                  <!--slect data range-->
+                  <div class="input-field col s6">
+                    <select>
+                      <option value="" disabled selected>Choose data range</option>
+                      <option value="1">7 Days</option>
+                      <option value="2">14 Days</option>
+                      <option value="3">30 Days</option>
+                    </select>
+                    <label>Data range</label>
+                  </div>
                 </div>
               </div>
-            </div><!-- end of card-->  
-        </div>
+            </div>
           </div>
-          
-          
-          
-          
-          
-          
-          
-          <div class="row">
-                <div class="col s12">
-                    <div class="card white">
-                        <div class="card-content black-text">
-                         <div class="row">
-                         <img src="../../img/Chart-JS.png" width="100%" height="auto">
-                        </div>
-                        </div><!-- end of card contend div-->
-                      </div>
-                    </div>
-          
-              </div><!-- end of the cardrow-->
-       
-          
-          
-          
-      </div><!-- end of the container-->
+        </div>
 
-      
+        <div class="row">
+          <div class="section">
+            <div class="col s2 ">
+              <div class="card grey lighten-3 z-depth-0">
+                <div class="card-content red-text text-accent-2 ">
+                 <div class="input-field">
+                    <select>
+                      <option value="1"selected>Clicks</option>
+                      <option value="2">Views</option>
+                      <option value="3">Avg.CPM</option>
+                    </select>
+                  </div>
+                  <p>Increase 20%</p>
+                </div>
+              </div>
+            </div> 
+            <div class="col s2 push-s3">
+              <div class="card grey lighten-3 z-depth-0">
+                <div class="card-content red-text text-accent-2 ">
+                  <div class="input-field">
+                    <select>
+                      <option value="1"selected>Views</option>
+                      <option value="2">Clicks</option>
+                      <option value="3">Avg.CPM</option>
+                    </select>
+                  </div>
+                  <p>Decrease 20%</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s2 push-s6 ">
+              <div class="card grey lighten-3 z-depth-0">
+                <div class="card-content red-text text-accent-2 ">
+                  <div class="input-field">
+                    <select>
+                      <option value="1"selected>Clicks</option>
+                      <option value="2">Views</option>
+                      <option value="3">Avg.CPM</option>
+                    </select>
+                  </div>
+                  <p>Increase 20%</p>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+          
+        <div class="row">
+          <div class="col s12">
+            <div class="card white">
+              <div class="card-content black-text">
+                <div class="row">
+                  <img src="../../img/Chart-JS.png" width="100%" height="auto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="../../js/materialize.min.js"></script>
       <script src="../../js/init.js"></script>
 
     </body>
-
-
-
   </html>
