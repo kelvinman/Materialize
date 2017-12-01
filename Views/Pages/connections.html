@@ -59,7 +59,7 @@
                       <th>Last Modified</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="connection_list">
                    <tr>
                       <td class="editable">First</td>
                       <td>Facebook Ads</td>
@@ -94,29 +94,31 @@
           <div class="modal-content">
             <h4>CREATE CONNECTIONS</h4>
             <br>
-
+              
+            <form id="new_connection" action="" method="">
             <div class="input-field col s6">
               <input id="connection_name" type="text" class="validate">
               <label for="name">Name</label>
             </div>
 
             <div class="input-field col s12">
-              <select>
+              <select id="connection_select">
                 <option value="" disabled selected>Choose your connection</option>
                 <option value="1">Facebook Ads</option>
                 <option value="2">Google Adwords</option>
-                <option value="3">Option 3</option>
+                <option value="3">Bing Ads</option>
               </select>
             </div>
+             </form>
             <br><br><br><br><br>
           </div>
 
           <!--create connection btn-->
           <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-light btn red accent-2">CREATE CONNECTION</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-light btn red accent-2" >CREATE CONNECTION</a>
           </div>
           <br>
-
+       
         </div>                   
       </div>
           
@@ -125,6 +127,7 @@
       <script type="text/javascript" src="../../js/mindmup-editabletable.js"></script>
       <script type="text/javascript" src="../../js/materialize.min.js"></script>
       <script src="../../js/init.js"></script>
+      <script src="../../js/connection.js"></script>
 
     </body>
   </html>
