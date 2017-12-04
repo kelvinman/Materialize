@@ -25,7 +25,7 @@
         <li><a href="../../index.html">Logout</a></li>
       </ul>
       <!--navbar-->
-      <nav class="blue-grey">
+      <nav class="#37474f blue-grey darken-3">
         <div class="class navwrapper container">
           <img src="../../img/adigami-icon.ico">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -49,31 +49,32 @@
           <div class="col s12 m6 offset-m3">
             <div class="card white">
               <div class="card-content black-text">
-                <span class="card-title red-text text-accent-2"><i class="material-icons left">filter_drama</i>CREATE CONNECTION</span>
+                <span class="card-title red-text text-accent-2"><i class="material-icons left">filter_drama</i>NEW CONNECTION</span>
                 <br>
                 
                 <div class="row">
                   <div class="input-field col s12">
                     <input id="connection_name" type="text" class="validate">
-                    <label for="name">Create name</label>
+                    <label for="name">NAME</label>
                   </div>
                 </div>
                
                 <div class="row">
                   <div class="input-field col s12">
                     <select>
-                      <option value="" disabled selected>Choose your connection</option>
+                      <option value="Data source" disabled selected>Data source</option>
                       <option value="1">Facebook Ads</option>
                       <option value="2">Google Adwords</option>
                       <option value="3">Option 3</option>
                     </select>
                   </div>
                 </div>
-
-                <div class="modal-footer">
-                  <a href="#!" class="right modal-action modal-close waves-effect waves-light btn red accent-2">CREATE CONNECTION</a>
+                
+                <div class="row">
+                  <div class="input-field col s12">                              
+                      <button class="right btn waves-effect waves-light red accent-2" type="create" name="action">CREATE</button>
+                  </div>
                 </div>
-                   <br><br><br>
 
               </div>
             </div>
