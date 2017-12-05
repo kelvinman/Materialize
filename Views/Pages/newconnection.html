@@ -31,7 +31,7 @@
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="../../Views/Pages/dashboard.html">DASHBOARD</a></li>
-            <li class="active"><a href="#!">CONNECTIONS</a></li>
+            <li class="active"><a href="../../Views/Pages/connections.html">CONNECTIONS</a></li>
             <li><a class="dropdown-button" href="#!" data-activates="navbar-dropdown">USER<i class="material-icons right">arrow_drop_down</i></a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
@@ -46,56 +46,47 @@
       <div class="container">
         <br>
         <div class="row">
-          <div class="col s12">
+          <div class="col s12 m6 offset-m3">
             <div class="card white">
               <div class="card-content black-text">
-                <span class="card-title red-text text-accent-2"><i class="material-icons left">filter_drama</i>CONNECTIONS<a href="../../Views/Pages/newconnection.html"><button class="right btn waves-effect waves-light red accent-2 modal-trigger" type="submit" name="action"><i class="material-icons left">add</i>NEW CONNECTION</button></a></span>
+                <span class="card-title red-text text-accent-2"><i class="material-icons left">filter_drama</i>NEW CONNECTION</span>
                 <br>
-                <table class="highlight bordered editable">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Data Source</th>
-                      <th>Last Modified</th>
-                    </tr>
-                  </thead>
-                  <tbody id="connection_list">
-                   <tr>
-                      <td class="editable">Acme Inc.</td>
-                      <td>Facebook Ads</td>
-                      <td>11/08/2017</td>
-                      <td><i class="material-icons" title="Edit">edit</i></td>
-                      <td><i class="material-icons" title="Delete">delete</i></td>
-                    </tr>
-                    <tr>
-                      <td class="editable">Zain</td>
-                      <td>Google AdWords</td>
-                      <td>11/06/2017</td>
-                      <td><i class="material-icons" title="Edit">edit</i></td>
-                      <td><i class="material-icons" title="Delete">delete</i></td>
-                    </tr>
-                    <tr>
-                      <td class="editable">Third</td>
-                      <td>DoubleClick</td>
-                      <td>11/21/2017</td>
-                      <td><i class="material-icons" title="Edit">edit</i></td>
-                      <td><i class="material-icons" title="Delete">delete</i></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <br>
+                
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="connection_name" type="text" class="validate">
+                    <label for="name">Name</label>
+                  </div>
+                </div>
+               
+                <div class="row">
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Choose your datasource</option>
+                      <option value="1">Facebook Ads</option>
+                      <option value="2">Google Adwords</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <a href="../../Views/Pages/connections.html" class="right modal-action modal-close waves-effect waves-light btn red accent-2">CONNECT</a>
+                </div>
+                   <br><br><br>
+
               </div>
             </div>
           </div>
-        </div>                
+        </div>
       </div>
+
           
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="../../js/mindmup-editabletable.js"></script>
       <script type="text/javascript" src="../../js/materialize.min.js"></script>
       <script src="../../js/init.js"></script>
-      <script src="../../js/connection.js"></script>
 
     </body>
   </html>
