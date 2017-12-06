@@ -14,15 +14,15 @@
     <body class="grey lighten-5">
       <!--navbar dropdown-->
       <ul id="navbar-dropdown" class="dropdown-content">
-        <li class="active"><a href="#!">Setting</a></li>
+        <li class="active"><a href="#!">Settings</a></li>
         <li class="divider"></li>
-        <li><a href="../../index.html">Logout</a></li>
+        <li><a href="login.html">Logout</a></li>
       </ul>
       <!--side-nav dropdown-->
       <ul id="side-nav-dropdown" class="dropdown-content">
-        <li class="active"><a href="#!">Setting</a></li>
+        <li class="active"><a href="#!">Settings</a></li>
         <li class="divider"></li>
-        <li><a href="../../index.html">Logout</a></li>
+        <li><a href="login.html">Logout</a></li>
       </ul>
       <!--navbar-->
       <nav class="blue-grey">
@@ -52,20 +52,20 @@
               <div class="card-content">
                 <span class="card-title red-text text-accent-2">BASIC INFO</span>
                 <div class="row">
-                  <form class="col s12">
+                  <form class="col s12" action="setting.html">
                     <div class="row">
                       <div class="input-field col s6">
-                        <input id="company" type="text" class="validate">
+                        <input value="Adigami" id="company" type="text" class="validate">
                         <label for="company">Company</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s6">
-                        <input id="name" type="text" class="validate">
+                        <input value="Cyrus Ghalambor" id="name" type="text" class="validate">
                         <label for="name">Name</label>
                       </div>
                       <div class="input-field col s6">
-                        <input disabled value="Email" id= "disabled" type="email" class="validate">
+                        <input disabled value="cyrus@adigami.com" id= "disabled" type="email" class="validate">
                         <label for="disabled" data-error="wrong" data-success="right">Email</label>
                       </div>
                     </div>
@@ -86,27 +86,29 @@
             <div class="card white">
               <div class="card-content black-text">
                 <span class="card-title red-text text-accent-2">CHANGE PASSWORD</span>
-                <div class="row">
-                    <div class="input-field col s6">
-                      <input id="password" type="password" class="validate">
-                      <label for="password">Current Password</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                      <input id="password" type="password" class="validate">
-                      <label for="password">New Password</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="password" type="password" class="validate">
-                      <label for="password">Confirm New Password</label>
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">                              
-                    <button class="right btn waves-effect waves-light red accent-2" type="submit" name="action">SUBMIT</button>
+                <form action="setting.html">
+                  <div class="row">
+                      <div class="input-field col s6">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Current Password</label>
+                      </div>
                   </div>
-                </div>
+                  <div class="row">
+                      <div class="input-field col s6">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">New Password</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Confirm New Password</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">                              
+                      <button class="right btn waves-effect waves-light red accent-2" type="submit" name="action">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

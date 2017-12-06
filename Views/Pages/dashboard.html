@@ -5,7 +5,7 @@
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="../../css/materialize.min.css">
       <link rel="stylesheet" href="../../css/init.css">
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
       <!-- Compiled and minified JavaScript -->
       <script src="../../js/materialize.min.js"></script>
       <!-- Import icons-->
@@ -15,15 +15,15 @@
     <body class="grey lighten-5">
       <!--navbar dropdown-->
       <ul id="navbar-dropdown" class="dropdown-content">
-        <li><a href="../../Views/Pages/setting.html">Setting</a></li>
+        <li><a href="../../Views/Pages/setting.html">Settings</a></li>
         <li class="divider"></li>
-        <li><a href="../../index.html">Logout</a></li>
+        <li><a href="login.html">Logout</a></li>
       </ul>
       <!--side-nav dropdown-->
       <ul id="side-nav-dropdown" class="dropdown-content">
-        <li><a href="../../Views/Pages/setting.html">Setting</a></li>
+        <li><a href="../../Views/Pages/setting.html">Settings</a></li>
         <li class="divider"></li>
-        <li><a href="../../index.html">Logout</a></li>
+        <li><a href="login.html">Logout</a></li>
       </ul>
       <!--navbar-->
       <nav class="blue-grey">
@@ -56,7 +56,7 @@
                   <div class="input-field col s6">
                     <select>
                       <option value="" disabled selected>Choose your connection</option>
-                      <option value="1">Acme Inc.</option>
+                      <option value="1" selected>AdWords for Acme, Inc.</option>
                       <option value="2">Zain</option>
                       <option value="3">Noah Kagan</option>
                       <option value="4">Contests</option>
@@ -72,7 +72,8 @@
                       <option value="" disabled selected>Choose data range</option>
                       <option value="1">7 Days</option>
                       <option value="2">14 Days</option>
-                      <option value="3">28 Days</option>
+                      <option value="3">21 Days</option>
+                      <option value="4" selected>28 Days</option>
                     </select>
                     <label>Data Range</label>
                   </div>
@@ -117,7 +118,7 @@
             <div class="card white">
               <div class="card-content black-text">
                 <div class="row">
-                  <div id="myfirstchart"></div>
+                  <div id='myfirstchart'></div>
                 </div>
               </div>
             </div>
@@ -130,8 +131,8 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="../../js/materialize.min.js"></script>
       <script src="../../js/init.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
       <script type="text/javascript">
         new Morris.Area({
