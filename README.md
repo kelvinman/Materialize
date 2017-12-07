@@ -3,7 +3,7 @@
 <table>
 <tr>
 <td>
-  A front-end interface of the [Adigami](http://www.adigami.com) platform that users can interact with, create accounts on, and run visualizations of their data.
+  A front-end interface of the <a href="http://www.adigami.com">Adigami</a> platform that users can interact with, create accounts on, and run visualizations of their data.
 </td>
 </tr>
 </table>
