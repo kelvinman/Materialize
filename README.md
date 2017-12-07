@@ -1,4 +1,4 @@
-# ![Materialize](https://kelvinman.github.io/Materialize/img/demo/dashboard.png)
+# ![Materialize](img/demo/dashboard.png)
 # Materialize
 <table>
 <tr>
@@ -18,15 +18,15 @@ Here is a working live demo :  https://kelvinman.github.io/Materialize/Views/Pag
 
 ### Dashboard
 
-![](https://kelvinman.github.io/Materialize/img/demo/dashboard.png)
+![ScreenShot](img/demo/dashboard.png)
 
 ### Connnections Page
 
-![](https://kelvinman.github.io/Materialize/img/demo/connections.png)
+![ScreenShot](img/demo/connections.png)
 
 ### Settings Page
 
-![](https://kelvinman.github.io/Materialize/img/demo/settings.png)
+![ScreenShot](img/demo/settings.png)
 
 
 ## [Usage](https://kelvinman.github.io/Materialize/Views/Pages/login.html) 
@@ -40,7 +40,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Built with 
 
-- [jQuery - Ajax](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
+- [jQuery](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating.
 - [morris.js](http://morrisjs.github.io/morris.js/) - Simple API for drawing line, bar, area and donut charts.
 - [Materialize](http://http://materializecss.com/) - Modern responsive CSS framework based on Material Design by Google.
 
@@ -52,7 +52,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Team
 
-[Kelvin Man ](https://github.com/kelvinman) |[Xiaoyu ](https://github.com/xwen5) |[Xiaosong Weng ](https://github.com/Nyarukoooo)
+[Kelvin Man ](https://github.com/kelvinman) |[ Xiaoyu ](https://github.com/xwen5) |[ Xiaosong Weng ](https://github.com/Nyarukoooo)
 
 
 ## [License]()
