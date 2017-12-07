@@ -3,7 +3,7 @@
 <table>
 <tr>
 <td>
-  A single API for all digital media analytics.
+  A front-end interface of the Adigami platform that users can interact with, create accounts on, and run visualizations of their data.
 </td>
 </tr>
 </table>
@@ -40,7 +40,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Built with 
 
-- [jQuery](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating.
+- [jQuery](https://www.w3schools.com/jquery/default.asp) - jQuery simplifies HTML document traversing, event handling, animating.
 - [morris.js](http://morrisjs.github.io/morris.js/) - Simple API for drawing line, bar, area and donut charts.
 - [Materialize](http://http://materializecss.com/) - Modern responsive CSS framework based on Material Design by Google.
 
