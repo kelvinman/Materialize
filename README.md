@@ -29,7 +29,7 @@ Here is a working live demo :  https://kelvinman.github.io/Materialize/Views/Pag
 ![ScreenShot](img/demo/settings.png)
 
 
-## [Usage](https://kelvinman.github.io/Materialize/Views/Pages/login.html) 
+## [Usage](https://kelvinman.github.io/Materialize/Views/Pages/login.html)
 
 ### Bug / Feature Request
 
@@ -38,16 +38,16 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/kelvinman/Materialize/issues/new). Please include sample queries and their corresponding results.
 
 
-## Built with 
+## Built with
 
 - [jQuery](https://www.w3schools.com/jquery/default.asp) - jQuery simplifies HTML document traversing, event handling, animating.
 - [morris.js](http://morrisjs.github.io/morris.js/) - Simple API for drawing line, bar, area and donut charts.
-- [Materialize](http://http://materializecss.com/) - Modern responsive CSS framework based on Material Design by Google.
+- [Materialize](http://materializecss.com/) - Modern responsive CSS framework based on Material Design by Google.
 
 
 ## To-do
 
-- 
+-
 
 
 ## Team
