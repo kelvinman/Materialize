@@ -54,21 +54,26 @@
                 <div class="row" style="margin-bottom: 0px">
                   <!-- select connection-->
                   <div class="input-field col s6">
-                    <select name="id" onchange="changeConnection(this)">
+                    <select>
                       <option value="" disabled selected>Choose your connection</option>
-                      <option value="1">AdWords for Acme, Inc.</option>
-                     
+                      <option value="1" selected>AdWords for Acme, Inc.</option>
+                      <option value="2">Zain</option>
+                      <option value="3">Noah Kagan</option>
+                      <option value="4">Contests</option>
+                      <option value="5">Daily Deals</option>
+                      <option value="6">Evergreens</option>
+                      <option value="7">Free Deals</option>
                     </select>
                     <label>Dashboard Connection</label>
                   </div>
                   <!--slect data range-->
                   <div class="input-field col s6">
-                    <select name="dataRange" onchange="changeConnection(this)">
+                    <select>
                       <option value="" disabled selected>Choose data range</option>
-                      <option value="7">7 Days</option>
-                      <option value="14">14 Days</option>
-                      <option value="21">21 Days</option>
-                      <option value="28">28 Days</option>
+                      <option value="1">7 Days</option>
+                      <option value="2">14 Days</option>
+                      <option value="3">21 Days</option>
+                      <option value="4" selected>28 Days</option>
                     </select>
                     <label>Data Range</label>
                   </div>
@@ -112,27 +117,34 @@
           <div class="col s12">
             <div class="card white">
               <div class="card-content black-text">
-                  <div= class="row">
-                    <div class="input-field col s4">
-                      <span class="card-title red-text text-accent-2">OVERVIEW</span>
+                <div= class="row">
+                  <!-- select connection-->
+                  <div class="input-field col s6">
+                      <select>
+                        <option value="" disabled selected>Choose metric</option>
+                        <option value="1" selected>Impression</option>
+                        <option value="2">Click</option>
+                        <option value="3">Cost</option>
+                        <option value="4">CPC</option>
+                        <option value="5">CPM</option>
+                      </select>
+                      <label>Metric</label>
                     </div>
-                    <!-- select metric-->
-                    <div class="input-field col s4">
-                        <select id="matrix1" onchange="changeSelection(this)">
-                          <option value="" disabled selected>Choose metric</option>
-                        </select>
-                        <label>Metric</label>
-                      </div>
-                      <!--select  metric-->
-                      <div class="input-field col s4">
-                        <select id="matrix2" onchange="changeSelection(this)">
-                          <option value="" disabled selected>Choose metric</option>
-                        </select>
-                        <label>Metric</label>
-                      </div>
-                  </div>
+                    <!--slect data range-->
+                    <div class="input-field col s6">
+                      <select>
+                        <option value="" disabled selected>Choose metric</option>
+                        <option value="1">Impression</option>
+                        <option value="2" selected>Click</option>
+                        <option value="3">Cost</option>
+                        <option value="4">CPC</option>
+                        <option value="5">CPM</option>
+                      </select>
+                      <label>Metric</label>
+                    </div>
+                </div>
                 <div class="row">
-                  <div id='myfirstchart' style="margin: 0 40px 40px 40px;"></div>
+                  <div id='myfirstchart' style="margin: 0 35px 35px 35px;"></div>
                 </div>
               </div>
             </div>
@@ -147,7 +159,29 @@
       <script src="../../js/init.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-      <script src="../../js/dashboard.js"></script>
+
+      <script type="text/javascript">
+        new Morris.Area({
+          element: 'myfirstchart',
+          data: [
+            { y: '2014', a: 50,  b: 90},
+            { y: '2015', a: 65,  b: 75},
+            { y: '2016', a: 50,  b: 50},
+            { y: '2017', a: 75,  b: 60},
+            { y: '2018', a: 80,  b: 65},
+            { y: '2019', a: 90,  b: 70},
+            { y: '2020', a: 100, b: 75},
+            { y: '2021', a: 115, b: 75},
+            { y: '2022', a: 120, b: 85},
+            { y: '2023', a: 145, b: 85},
+            { y: '2024', a: 160, b: 95}
+          ],
+          xkey: 'y',
+          ykeys: ['a', 'b'],
+          labels: ['Series A', 'Series B'],
+          lineColors: ['#607d8b','#ff3321'],
+        });
+      </script>
 
     </body>
   </html>
