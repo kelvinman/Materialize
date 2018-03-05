@@ -7,6 +7,9 @@ var matrix1Select="";
 var connection="";
 var dataRange="";
 var matrix2Select="";
+var cpm;
+var views;
+var clicks;
 
 
 function changeConnection(select){
@@ -21,7 +24,6 @@ function changeConnection(select){
 function makeUrl(){
     var url=`https://materialize-json-server.herokuapp.com/posts${dataRange}`;
     loadDoc(url);
-    console.log(url);
 }
 
 function loadDoc(url) {
@@ -42,6 +44,9 @@ function loadDoc(url) {
 //parsing json files and preceed to drawing graphs.
 function jsonParse(xml){
     responseData =JSON.parse(xml.responseText);
+    $("#cpm").append(responseData.graph[0].cpm);
+    $("#views").append(responseData.graph[0].viewthru_conversions);
+    $("#clicks").append(responseData.graph[0].clicks);
     draw();
 }
 
@@ -72,17 +77,20 @@ function chartRow (keyvalue,item){
             
             if ( key.valueOf()== "date".valueOf()){
                 data+=`${key}:'${String(item[key])}',`;
+                
                  
             }
             else if (i == keyvalue.length -1 ){
                data+=`${key}:${Number(item[key])}`;
+               
             }
             else{
             data+=`${key}:${Number(item[key])},`;
-                
+            
               }
             }
    
+
     return data;
 }
 
@@ -98,6 +106,7 @@ function editChart(xkey,ykey1,ykey2){
           ykeys: ['${ykey1}', '${ykey2}'],
           labels: ['${ykey1}', '${ykey2}'],
           lineColors: ['#607d8b','#ff3321'],
+          resize: true
         });`
 }
 //create selection of the matrix
@@ -158,8 +167,5 @@ function Redraw(){
     var beginning= newChart();
     graphData = chartData();
     var graphAttribute=  editChart("date",matrix1Select,matrix2Select);
-    drawSelection();
     eval(beginning+graphData+graphAttribute);        
 }
-
-
