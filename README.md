@@ -29,7 +29,7 @@ Here is a working live demo :  https://kelvinman.github.io/Materialize/Views/Pag
 ![ScreenShot](img/demo/settings.png)
 
 
-## [Usage](https://kelvinman.github.io/Materialize/Views/Pages/login.html)
+## [Usage](https://kelvinman.github.io/Materialize/)
 
 ### Bug / Feature Request
 

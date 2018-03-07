@@ -1,7 +1,7 @@
 //establishing ajax connection
 
-var responseData= null; // json will be  stored using this global variable.
-var matrixValue =[]; // global variable for storing matrix value based on adigami json file.
+var responseData= null; //json will be  stored using this global variable.
+var matrixValue =[]; //global variable for storing matrix value based on adigami json file.
 var graphData="";
 var matrix1Select="";
 var connection="";
@@ -11,16 +11,16 @@ var cpm;
 var views;
 var clicks;
 
-
 function changeConnection(select){
     if (select.name=="id"){
         connection=select.value;
     }
     else if (select.name=="dataRange"){
         dataRange=select.value;
+        makeUrl();
     }
-    makeUrl();
 }
+
 function makeUrl(){
     var url=`https://materialize-json-server.herokuapp.com/posts${dataRange}`;
     loadDoc(url);
@@ -40,17 +40,14 @@ function loadDoc(url) {
   xhttp.send();
 }
 
-
 //parsing json files and preceed to drawing graphs.
 function jsonParse(xml){
     responseData =JSON.parse(xml.responseText);
-    $("#cpm").append(responseData.graph[0].cpm);
-    $("#views").append(responseData.graph[0].viewthru_conversions);
-    $("#clicks").append(responseData.graph[0].clicks);
+    $("#cpm").append(roundFloat(responseData.graph[0].CPM));
+    $("#views").append(roundFloat(responseData.graph[0].viewthru_conversions));
+    $("#clicks").append(roundFloat(responseData.graph[0].Clicks));
     draw();
 }
-
-
 
 function newChart(element){
     if (typeof element === 'undefined'){
@@ -59,6 +56,7 @@ function newChart(element){
     return `new Morris.Line({
           element: '${element}',`
 }
+
 //Processing json file and making data template
 function chartData(){
     var data= ``;
@@ -66,8 +64,8 @@ function chartData(){
         data+=`{${chartRow(Object.keys(item),item)}},`;
         }
     return `data: [${data} ],`
-
 } 
+
 //Processing each row data and return string back to chartData();
 function chartRow (keyvalue,item){
    matrixValue=keyvalue;
@@ -85,12 +83,10 @@ function chartRow (keyvalue,item){
                
             }
             else{
-            data+=`${key}:${Number(item[key])},`;
+            data+=`${key}:${Number(roundFloat(item[key]))},`;
             
               }
             }
-   
-
     return data;
 }
 
@@ -109,6 +105,7 @@ function editChart(xkey,ykey1,ykey2){
           resize: true
         });`
 }
+
 //create selection of the matrix
 function drawSelection(){
    //remove date from matrix array
@@ -133,15 +130,12 @@ function drawSelection(){
        option.value= matrixValue[i];
        select2.appendChild(option);
    }
-    reloadSelect();// reinitiating selection by calling materialilze jquery method.
-   
+    reloadSelect(); //reinitiating selection by calling materialilze jquery method.
 }
-
 function drawBox(){
-
 }
 
-// draw() will be called everytime making ajax calls.
+//draw() will be called everytime making ajax calls.
 function draw(){
     document.getElementById("myfirstchart").innerHTML="";
     matrixValue=[];
@@ -161,6 +155,7 @@ function changeSelection(select){
     }
     Redraw();
 }
+
 //redraw chart everytime selection changes
 function Redraw(){
     document.getElementById("myfirstchart").innerHTML="";
@@ -169,3 +164,12 @@ function Redraw(){
     var graphAttribute=  editChart("date",matrix1Select,matrix2Select);
     eval(beginning+graphData+graphAttribute);        
 }
+
+//round float to 2 significant digits
+function roundFloat(value) {
+    if (value % 1 === 0) {
+        return value;
+    } else {
+        return parseFloat(value).toPrecision(2);
+    }
+  }
