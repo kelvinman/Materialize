@@ -110,9 +110,9 @@ function editChart(xkey,ykey1,ykey2){
 function drawSelection(){
    //remove date from matrix array
    for (var i = 0; i< matrixValue.length; i++){
-       if (matrixValue[i].valueOf() == "date".valueOf()){
-           matrixValue.splice(i,1);
-       }
+        if (matrixValue[i].valueOf() == "date".valueOf()){
+            matrixValue.splice(i,1);
+        }
    }
   
    destroySelect();
@@ -122,14 +122,14 @@ function drawSelection(){
        option.text= matrixValue[i];
        option.value= matrixValue[i];
        select1.appendChild(option);
-   }
-     for (var i = 0; i< matrixValue.length; i++){
+    }
+    for (var i = 0; i< matrixValue.length; i++){
        var select2= document.getElementById("matrix2");
        var option=  document.createElement("option");
        option.text= matrixValue[i];
        option.value= matrixValue[i];
        select2.appendChild(option);
-   }
+    }
     reloadSelect(); //reinitiating selection by calling materialilze jquery method.
 }
 function drawBox(){
@@ -139,11 +139,12 @@ function drawBox(){
 function draw(){
     document.getElementById("myfirstchart").innerHTML="";
     matrixValue=[];
-    var beginning= newChart();
+    var beginning = newChart();
     graphData = chartData();
-    var graphAttribute=  editChart("date");
+    $('#matrix1').val("click_conversions");
+    var graphAttribute = editChart("date","click_conversions");
     drawSelection();
-    eval(beginning+graphData+graphAttribute);        
+    eval(beginning+graphData+graphAttribute);
 }
 
 function changeSelection(select){
@@ -159,9 +160,9 @@ function changeSelection(select){
 //redraw chart everytime selection changes
 function Redraw(){
     document.getElementById("myfirstchart").innerHTML="";
-    var beginning= newChart();
+    var beginning = newChart();
     graphData = chartData();
-    var graphAttribute=  editChart("date",matrix1Select,matrix2Select);
+    var graphAttribute = editChart("date",matrix1Select,matrix2Select);
     eval(beginning+graphData+graphAttribute);        
 }
 
