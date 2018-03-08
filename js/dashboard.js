@@ -42,7 +42,10 @@ function loadDoc(url) {
 
 //parsing json files and preceed to drawing graphs.
 function jsonParse(xml){
-    responseData =JSON.parse(xml.responseText);
+    responseData = JSON.parse(xml.responseText);
+    $("#cpm").empty();
+    $("#view").empty();
+    $("#clicks").empty();
     $("#cpm").append(roundFloat(responseData.graph[0].CPM));
     $("#views").append(roundFloat(responseData.graph[0].viewthru_conversions));
     $("#clicks").append(roundFloat(responseData.graph[0].Clicks));
@@ -141,7 +144,6 @@ function draw(){
     matrixValue=[];
     var beginning = newChart();
     graphData = chartData();
-    $('#matrix1').val("click_conversions");
     var graphAttribute = editChart("date","click_conversions");
     drawSelection();
     eval(beginning+graphData+graphAttribute);
