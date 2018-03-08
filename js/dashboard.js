@@ -44,7 +44,7 @@ function loadDoc(url) {
 function jsonParse(xml){
     responseData = JSON.parse(xml.responseText);
     $("#cpm").empty();
-    $("#view").empty();
+    $("#views").empty();
     $("#clicks").empty();
     $("#cpm").append(roundFloat(responseData.graph[0].CPM));
     $("#views").append(roundFloat(responseData.graph[0].viewthru_conversions));
