@@ -35,9 +35,9 @@ function loadDoc(url) {
     
     console.log("The connection state is " + this.readyState + "\ The status is " + this.status)
     
-  };
-  xhttp.open("GET", url, true);
-  xhttp.send();
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
 }
 
 //parsing json files and preceed to drawing graphs.
@@ -144,8 +144,9 @@ function draw(){
     matrixValue=[];
     var beginning = newChart();
     graphData = chartData();
-    var graphAttribute = editChart("date","click_conversions");
+    var graphAttribute = editChart("date","click_conversions","CPA");
     drawSelection();
+    console.log(beginning+graphData+graphAttribute);
     eval(beginning+graphData+graphAttribute);
 }
 
@@ -176,3 +177,8 @@ function roundFloat(value) {
         return parseFloat(value).toPrecision(2);
     }
   }
+
+    $(document).ready(function(){
+        dataRange=28;
+        makeUrl();
+    })
