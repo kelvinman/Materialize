@@ -11,7 +11,7 @@
 
 ## Demo
 
-Here is a working live demo :  https://kelvinman.github.io/Materialize/Views/Pages/login.html
+Here is a working live demo :  https://kelvinman.github.io/Materialize/
 
 
 ## Site
