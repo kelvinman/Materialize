@@ -46,9 +46,15 @@ function jsonParse(xml){
     $("#cpm").empty();
     $("#views").empty();
     $("#clicks").empty();
+    $("#cpm_percent").empty();
+    $("#views_percent").empty();
+    $("#clicks_percent").empty();
     $("#cpm").append(roundFloat(responseData.graph[0].CPM));
     $("#views").append(roundFloat(responseData.graph[0].viewthru_conversions));
     $("#clicks").append(roundFloat(responseData.graph[0].Clicks));
+    $("#cpm_percent").append(roundFloat(responseData.graph[0].CPM-responseData.graph[1].CPM));
+    $("#views_percent").append(roundFloat(responseData.graph[0].viewthru_conversions-responseData.graph[1].viewthru_conversions));
+    $("#clicks_percent").append(roundFloat(responseData.graph[0].Clicks-responseData.graph[1].Clicks));
     draw();
 }
 
